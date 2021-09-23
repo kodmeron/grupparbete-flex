@@ -14,6 +14,7 @@ body {
     width: 100%;
     background-image: url(img/pexels-photo-167092.jpeg);
     background-repeat: no-repeat;
+    position: center;
 }
 
 header {
