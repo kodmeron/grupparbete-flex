@@ -1,25 +1,23 @@
 body {
     background-size: 100%;
-    background-color: darkslategray;
+    background-color: #ECDDD0;
 }
 
 .head-container {
     display: grid;
-    background-color: rgb(126, 26, 1);
+    background-color: #ffffff;
 
 }
 
 .pic {
     height: 150px;
     width: auto;
-    border: 1px solid #333;
 }
 
 header {
 height: 80px;
 width: auto;
-border: 1px solid #333;
-background-color: rgb(218, 218, 218);
+background-color: #92B1B6;
 display: grid;
 grid-template-columns: repeat(12, 1fr);
 justify-items: center;
@@ -29,7 +27,7 @@ align-items: center;
 .home, .records, .about-us, .contact {
     width: 80px;
     height: 30px;
-    background-color: rgb(126, 26, 1);
+    background-color: #F1C5AE;
     font-family: Eczar;
     font-size: large;
     text-align: center;
