@@ -10,8 +10,10 @@ body {
 }
 
 .pic {
-    height: 150px;
-    width: auto;
+    height: 250px;
+    width: 100%;
+    background-image: url(img/pexels-photo-167092.jpeg);
+    background-repeat: no-repeat;
 }
 
 header {
