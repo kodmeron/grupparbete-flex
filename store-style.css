@@ -25,6 +25,7 @@
 .sidenav-store {
     grid-area: sidebar;
     border-right: 1px solid black;
+    background-color: #F1C5AF;
 }
 
 .sidenav-store a, ul li {
@@ -37,7 +38,7 @@
     
 } a:hover {
     padding: 20px;
-    background-color: gray;
+    background-color: #ECDDD0;
     color: black;    
 }
 
@@ -52,7 +53,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-	
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -90,6 +91,9 @@ p {
     }
 }
 @media screen and (max-width: 768px) {
+    .sidenav-store {
+    border-bottom: 1px solid black;
+    }
     .container-store {
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: auto;
