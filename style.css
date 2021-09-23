@@ -12,10 +12,6 @@ body {
 .pic {
     height: 250px;
     width: 100%;
-    /*background-image: url(img/pexels-photo-167092.jpeg);*/
-    /*background-repeat: no-repeat;
-    position: center;
-    background-size: auto;*/
 }
 
 header {
@@ -38,7 +34,7 @@ align-items: center;
 
 }
 
-ul, a {
+a {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -47,6 +43,7 @@ ul, a {
     column-gap: 17%;
     text-decoration: none;
     color: black;
+    
   }
 
 a:hover {
@@ -81,4 +78,73 @@ a:hover {
      grid-column: 11;
         
    
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        grid-column: 3;
+        
+    }
+    
+    .home {
+        
+        grid-column: 5;
+        
+    }
+    
+    .records {
+        grid-column: 6;
+    }
+    
+    .about-us {
+        grid-column: 7;
+    }
+    
+    .contact {
+        grid-column: 8;
+    }
+    
+    .search {
+        
+         grid-column: 11;
+            
+       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .logo {
+        grid-column: 3;
+        
+    }
+    
+    .home {
+        
+        grid-column: 5;
+        
+    }
+    
+    .records {
+        grid-column: 6;
+    }
+    
+    .about-us {
+        grid-column: 7;
+    }
+    
+    .contact {
+        grid-column: 8;
+    }
+    
+    .search {
+        
+         grid-column: 11;
+            
+       
+    }
 }
