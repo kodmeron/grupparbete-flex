@@ -52,7 +52,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-	
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -90,6 +90,9 @@ p {
     }
 }
 @media screen and (max-width: 768px) {
+    .sidenav-store {
+    border-bottom: 1px solid black;
+    }
     .container-store {
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: auto;
