@@ -1,3 +1,9 @@
+.head-container {
+    display: grid;
+    background-color: #ffffff;
+
+}
+
 .container-store {
     width: 100%;
     display: grid;
