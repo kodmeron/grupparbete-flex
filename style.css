@@ -1,6 +1,7 @@
 body {
     background-size: 100%;
     background-color: #ECDDD0;
+    margin: auto;
 }
 
 .head-container {
@@ -93,7 +94,6 @@ a:hover {
         
    
 }
-<<<<<<< HEAD
 .telcontact{
     grid-column: 12;
 }
@@ -103,74 +103,3 @@ a:hover {
 .followus{
     grid-column: 9;
 }
-=======
-
-@media screen and (min-width: 1200px) {
-    .logo {
-        grid-column: 3;
-        
-    }
-    
-    .home {
-        
-        grid-column: 5;
-        
-    }
-    
-    .records {
-        grid-column: 6;
-    }
-    
-    .about-us {
-        grid-column: 7;
-    }
-    
-    .contact {
-        grid-column: 8;
-    }
-    
-    .search {
-        
-         grid-column: 11;
-            
-       
-    }
-}
-
-@media screen and (max-width: 768px) {
-    
-    header {
-        grid-template-columns: repeat(12, 1fr);
-    }
-    
-    .logo {
-        grid-column: 3;
-        
-    }
-    
-    .home {
-        
-        grid-column: 5;
-        
-    }
-    
-    .records {
-        grid-column: 6;
-    }
-    
-    .about-us {
-        grid-column: 7;
-    }
-    
-    .contact {
-        grid-column: 8;
-    }
-    
-    .search {
-        
-         grid-column: 11;
-            
-       
-    }
-}
->>>>>>> 54c05be433382ca98b280857440622b54b4061d6

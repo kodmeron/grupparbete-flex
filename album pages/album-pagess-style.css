@@ -1,6 +1,7 @@
 body {
     background-size: 100%;
     background-color: #ECDDD0;
+    margin: auto;
 }
 
 .head-container {
@@ -9,9 +10,23 @@ body {
 
 }
 
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #92B1B6;
+   }
+   
+
 .pic {
-    height: 150px;
-    width: auto;
+    height: 250px;
+    width: 100%;
 }
 
 header {
@@ -34,13 +49,15 @@ align-items: center;
 
 }
 
-ul {
+a {
     list-style-type: none;
     margin: 0;
     padding: 0;
     float: left;
     display: grid;
     column-gap: 17%;
+    text-decoration: none;
+    color: black;
     
   }
 
@@ -50,7 +67,7 @@ a:hover {
 
 .logo {
     grid-column: 3;
-	
+
 }
 
 .home {
@@ -77,42 +94,100 @@ a:hover {
         
    
 }
+.telcontact{
+    grid-column: 12;
+}
+.subscribe{
+    grid-column: 5;
+}
+.followus{
+    grid-column: 9;
+}
 
+/*----------------------------------------------------------*/
 
-
-/* -------------------------------------------------------------- */
+.spacing {
+    height: 20px;
+    width: 100%;
+}
 
 .container {
-    width: 100%;
+    max-width: inherit;
     height: 900px;
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-	grid-template-rows: repeat(12, 1fr);
-    column-gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-sizing: border-box;
 }
 
 .album-images-container {
     background-color: #CED2C2;
-   
-    grid-column: 6 / span 8;
-    grid-row: 2 / span 8;
+    max-height: 81%;
+    width: 35%;
+    box-sizing: inherit;
+    
 
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(24, 1fr);
+    display: flex;
+    
+    align-items: center;
+    
+    flex-flow: column nowrap;
+    
+}
+
+.album-artFRONT {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 25px;
+}
+
+.album-artBACK {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 .album-info-container {
     background-color: rgb(218, 218, 218);
-    grid-column: 14 / span 5;
-    grid-row: 2 / span 7;
+    height: 60%;
+    width: 25%;
+    
 
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-rows: repeat(24, 1fr);
+    display: flex;
+    
+    align-items:flex-start;
+    gap: 25px;
+    flex-flow: column nowrap;
+    
 }
 
-.album-art {
-    grid-column: 3 / span 8;
-    grid-row: 2 / span 7;
+.album-name {
+    font-family: Eczar;
+    margin-left: 10px;
+    
 }
+
+.album-descript {
+    margin-left: 10px;
+}
+
+.purchase {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .spacing {
+        height: 90px;
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .album-images-container {
+        width: 100%;
+        height: 100%;
+    }
+} 
