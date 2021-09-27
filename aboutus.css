@@ -166,3 +166,25 @@ footer {
     border-radius: 50%;
     margin: 40px;
 }
+.followus{
+    grid-column: span 2;
+    grid-row: 1;
+}
+.social-media-logo {
+	width: 2vw;
+}
+
+.hlink {
+	color: black;
+}
+
+.hlink:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.social-media {
+	grid-column: 9;
+	position: relative;
+	display: grid;
+}

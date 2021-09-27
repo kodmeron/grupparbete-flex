@@ -144,6 +144,18 @@ footer {
     height: 250px;
     background-color: #92B1B6;
 }
+.footer-logo {
+    grid-column: 3;
+}
+.telcontact{
+    grid-column: 12;
+}
+.subscribe{
+    grid-column: 5;
+}
+.followus{
+    grid-column: 9;
+}
 @media only screen and (min-width: 768px) {
 	.resize-button{
 		position: relative;
@@ -183,4 +195,26 @@ footer {
 #name {
 	grid-column: span 2;
 	grid-row: 1;
+}
+.followus{
+    grid-column: span 2;
+    grid-row: 1;
+}
+.social-media-logo {
+	width: 2vw;
+}
+
+.hlink {
+	color: black;
+}
+
+.hlink:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.social-media {
+	grid-column: 9;
+	position: relative;
+	display: grid;
 }
