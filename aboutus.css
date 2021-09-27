@@ -1,0 +1,168 @@
+body {
+    background-color: #ECDDD0;
+    margin: auto;
+}
+
+.header-pic {
+    height: 170px;
+    width: 100%; 
+}
+.head-container {
+    display: grid;
+}
+header {
+    height: 80px;
+    width: auto;
+    background-color: #92B1B6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.home, 
+.records, 
+.about-us, 
+.contact {
+    width: 80px;
+    height: 30px;
+    background-color: #F1C5AE;
+    font-family: Eczar;
+    font-size: large;
+    text-align: center;
+}
+a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: grid;
+    column-gap: 17%;
+    text-decoration: none;
+    color: black; 
+}
+a:hover {
+    background-color: #ECDDD0;
+}
+.head-logo {
+    grid-column: 3;
+}
+.home {
+    grid-column: 5;	
+}
+.records {
+    grid-column: 6;
+}
+.about-us {
+    grid-column: 7;
+}
+.contact {
+    grid-column: 8;
+}
+.search { 
+    grid-column: 11;
+}
+#maincontainer{
+    width: 90%;
+    display: grid;
+    margin: 10px auto;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+@media screen and (max-width: 768px) {
+    #maincontainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    bottom: 0;
+    height: 250px;
+    background-color: #92B1B6;
+}
+.footer-logo {
+    grid-column: 3;
+}
+.telcontact{
+    grid-column: 12;
+}
+.subscribe{
+    grid-column: 5;
+}
+.followus{
+    grid-column: 9;
+}
+@media screen and (min-width: 1200px) {
+    .head-logo {
+        grid-column: 3;  
+    }
+    .home {
+        grid-column: 5;
+    }
+    .records {
+        grid-column: 6;
+    }
+    .about-us {
+        grid-column: 7;
+    }
+    .contact {
+        grid-column: 8;
+    }
+    .search {
+         grid-column: 11;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .header-pic {
+        display: none;
+    }
+    .head-container {
+        min-height: 170px;
+    }
+    header {
+        height: 140px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 15px;
+    }
+    .head-logo {
+        grid-column: 7;
+        grid-row: 1;
+    }
+    .home { 
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .records {
+        grid-column: 6;
+        grid-row: 2;
+    }
+    .about-us {
+        grid-column: 7;
+        grid-row: 2;
+    }
+    .contact {
+        grid-column: 8;
+        grid-row: 2;
+    }
+    .search {
+         grid-column: 11;
+         grid-row: 2; 
+    }
+}
+.Cam,
+.Em,
+.Nat,
+.Raz{
+    border-radius: 50%;
+    margin: 40px;
+}
