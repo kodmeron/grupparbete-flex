@@ -2,7 +2,11 @@ body {
     background-color: #ECDDD0;
     margin: auto;
 }
-
+h2{
+    font-weight: 100;
+    font-family: eczar;
+    color: #35455d;
+}
 .header-pic {
     height: 170px;
     width: 100%; 
@@ -163,6 +167,7 @@ footer {
 .Em,
 .Nat,
 .Raz{
+    opacity: 0.5;
     border-radius: 50%;
     margin: 40px;
 }
@@ -179,12 +184,33 @@ footer {
 }
 
 .hlink:hover {
-	color: red;
+	color: #35455d;
 	text-decoration: none;
 }
 
 .social-media {
+    color: #35455d;
+    font-family: Eczar;
 	grid-column: 9;
 	position: relative;
 	display: grid;
+}
+.followus{
+    font-size: larger;
+    /* color: #35455d; */
+    /* color: #f1c5ae; */
+    color: #ecddd0;
+    /* color: #ced2c2; */
+    /* color: #bfd1df; */
+    justify-self: center;
+}
+.telcontact{
+    font-family: Eczar;
+    font-size: larger;
+    /* color: #35455d; */
+    /* color: #f1c5ae; */
+    /* color: #ecddd0; */
+    /* color: #ced2c2; */
+    /* color: #bfd1df; */
+    justify-self: center;
 }
