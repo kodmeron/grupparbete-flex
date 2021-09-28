@@ -1,61 +1,4 @@
-.header-pic {
-    height: 170px;
-    width: 100%; 
-}
-.head-container {
-    display: grid;
-}
-header {
-    height: 80px;
-    width: auto;
-    background-color: #92B1B6;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-.home, 
-.records, 
-.about-us, 
-.contact {
-    width: 80px;
-    height: 30px;
-    background-color: #F1C5AE;
-    font-family: Eczar;
-    font-size: large;
-    text-align: center;
-}
-a {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: grid;
-    column-gap: 17%;
-    text-decoration: none;
-    color: black; 
-}
-a:hover {
-    background-color: #ECDDD0;
-}
-.head-logo {
-    grid-column: 3;
-}
-.home {
-    grid-column: 5;	
-}
-.records {
-    grid-column: 6;
-}
-.about-us {
-    grid-column: 7;
-}
-.contact {
-    grid-column: 8;
-}
-.search { 
-    grid-column: 11;
-}
+
 .container-store {
     width: 100%;
     height: 1180px;
@@ -74,12 +17,12 @@ a:hover {
 }
 .box-item {
      padding: 20px;
-     grid-area: item-box;
-     
+     grid-area: box-item;     
     }
-    .price-text {
-        font-family: Eczar;
-    }
+
+.price-text {
+    font-family: Eczar;
+}
 
 [class*="box-item"] {
     border-right: 1px solid black;
@@ -87,7 +30,7 @@ a:hover {
 
 }  
 .sidenav-store {
-    width: 120px;
+    width: 130px;
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -118,80 +61,45 @@ p {
     color: black;
     text-align: center;
 }
-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    bottom: 0;
-    height: 250px;
-    background-color: #92B1B6;
-}
-.footer-logo {
-    grid-column: 3;
-}
-.telcontact{
-    grid-column: 12;
-}
-.subscribe{
-    grid-column: 5;
-}
-.followus{
-    grid-column: 9;
-}
 
-@media screen and (max-width: 1200px) {
+/*Desktop*/
+@media screen and (min-width: 1200px) {
     .container-store {
-        gap: 4%;
-    grid-template-columns: repeat(5, 150px);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "sidebar box-item1 box-item2 box-item3 box-item4"
-    "sidebar box-item5 box-item6 box-item7 box-item8"
-    "sidebar box-item9 box-item10 box-item11 box-item12"
-    "sidebar box-item13 box-item14 box-item15 box-item16"
-    "sidebar box-item17 box-item18 box-item19 box-item20"
-    "sidebar box-item21 box-item22 box-item23 box-item24"
-    ;
+        grid-template-columns: repeat(6, 150px);
+        grid-template-rows: repeat(5, 150px);
+        grid-template-areas: 
+        "sidebar box-item1 box-item2 box-item3 box-item4 box-item5"
+        "sidebar box-item6 box-item7 box-item8 box-item9 box-item10"
+        "sidebar box-item11 box-item12 box-item13 box-item14 box-item15"
+        "sidebar box-item16 box-item17 box-item18 box-item19 box-item20"
+        "sidebar box-item21 box-item22 box-item23 box-item24 box-item25"
+        ;
     }
 }
+/*tablet*/
 @media screen and (max-width: 960px) {
 
-        .container-store {
-            gap: 2%;
-    grid-template-columns: repeat(3, 150px);
+    .container-store {
+    gap: 1%;
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: auto;
-    grid-template-areas: 
-    "sidebar box-item1 box-item2"
-    "sidebar box-item3 box-item4"
-    "sidebar box-item5 box-item6"
-    "sidebar box-item7 box-item8"
-    "sidebar box-item9 box-item10"
-    "sidebar box-item11 box-item12" 
-    "sidebar box-item13 box-item14" 
-    "sidebar box-item15 box-item16" 
-    "sidebar box-item17 box-item18" 
-    "sidebar box-item19 box-item20" 
-    "sidebar box-item21 box-item22"
-    "sidebar box-item23 box-item24"
-    ;
     }
 }
-
+/*Mobile*/
 @media screen and (max-width: 768px) 
 {
-
     .sidenav-store {
-        width: 100%;
-        height: 100px;
+        display: flex;
+        justify-content: center;
+    width: 100%;
+    height: 100px;
     border-bottom: 1px solid black;
     }
-    .container-store {
-        justify-items: center;
-        gap: 1%;
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: auto;
+    .container-store {    
+    justify-items: center;
+    gap: 1%;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: 25;
     grid-template-areas:
     "sidebar" 
     "box-item1" 
