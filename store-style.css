@@ -1,7 +1,12 @@
-
+/* body {
+    background-size: 100%;
+    background-color: #ECDDD0;
+    margin: auto;
+} */
 .container-store {
     width: 100%;
-    height: 1180px;
+    height: 100%;
+    min-height: 1180px;
     display: grid;
     margin: 15px;
     gap: 7%;
@@ -35,6 +40,7 @@
     height: 100%;
     gap: 3%;
     display: flex;
+    padding-right: 5px;
     flex-flow: column nowrap;
     justify-items: flex-start;
     align-content: space-between;
@@ -72,9 +78,10 @@ footer {
     width: 100%;
     height: 250px;
     background-color: #92B1B6;
+    grid-area: footer;
 }
 
-/*Desktop*/
+
 @media screen and (min-width: 1200px) {
     .container-store {
         grid-template-columns: repeat(6, 150px);
@@ -88,16 +95,27 @@ footer {
         ;
     }
 }
-/*tablet*/
+
 @media screen and (max-width: 960px) {
 
     .container-store {
     gap: 1%;
-    grid-template-columns: repeat(5, 300px);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(9, 200px);
+    grid-template-areas:
+    "sidebar box-item1 box-item2 box-item3"
+    "sidebar box-item4 box-item5 box-item6"
+    "sidebar box-item7 box-item8 box-item9"
+    "sidebar box-item10 box-item11 box-item12"
+    "sidebar box-item13 box-item14 box-item15"
+    "sidebar box-item16 box-item17 box-item18"
+    "sidebar box-item19 box-item20 box-item21"
+    "sidebar box-item22 box-item23 box-item24"
+    "sidebar box-item25"
+    ;
     }
 }
-/*Mobile*/
+
 @media screen and (max-width: 768px) 
 {
     .sidenav-store {
@@ -110,7 +128,7 @@ footer {
     .container-store {    
     justify-items: center;
     gap: 1%;
-    grid-template-columns: repeat(1, 500px);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: 25;
     grid-template-areas:
     "sidebar" 
@@ -140,4 +158,4 @@ footer {
     "box-item24"
     ;
     }
-}
+} 
