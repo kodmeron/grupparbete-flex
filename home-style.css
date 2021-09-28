@@ -121,19 +121,126 @@
     grid-column: 1;
     }
 
-    @media screen and (max-width: 960px;) {
-        
+    /* MEDIA SMALL LAPTOP RESPONSIVE  */
+
+    @media screen and (max-width: 960px) {
+        .toprecords {
+            grid-row: 1;
+        }
+        .slider {
+            grid-row: 2;
+        }
+
+  
+        .latestnews {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+        }
+
+
+        .lastrecieved {
+            grid-column: 2;
+            grid-row: 1;
+            align-self: end;
+        }
+
+
+        .latestrelease {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+        }
     }
 
-    @media screen and (max-width: 680px) {
-        
+    /* MEDIA TABLET RESPONSIVE  */
+
+    @media screen and (max-width: 768px) {
+        #section-toprecords {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 2;
+        }        
+        .toprecords {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: center;
+        }
+        .slider {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+
+        #section-1 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 2;
+        }        
+        .latestnews {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+        }
+        .latestnews-text {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+
+        #section-2 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 2;
+        }
+        .lastrecieved {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+        }
+        .lastrecieved-text {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+
+        #section-3 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 2;
+        }
+        .latestrelease {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+        }
+        .latestrelease-text {
+            grid-column: 1;
+            grid-row: 2;
+        }
     }
 
-    @media screen and (max-width: 460px) 
+    /* MEDIA MOBILE RESPONSIVE */
+
+    @media screen and (max-width: 470px) 
     {
         header {
             height: 300px;
         }
+
+
+        #section-toprecords {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 2;
+
+            margin-top: 25%;
+        }        
+        .toprecords {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: center;
+        }
+        .slider {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
 
         #section-1 {
             grid-template-columns: repeat(1, 1fr);
