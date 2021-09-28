@@ -1,3 +1,11 @@
+/* 
+#f1c5ae
+#ecddd0 
+#ced2c2
+#92b1b6
+#35455d
+#8fd1df
+*/
 body {
     background-color: #ECDDD0;
     margin: auto;
@@ -55,27 +63,31 @@ a:hover {
 .about-us {
     grid-column: 7;
 }
-.contact {
+/* .contact {
     grid-column: 8;
-}
+} */
 .search { 
     grid-column: 11;
 }
+
 h1 {
-    font-family: 'Poppins', sans-serif, 'arial';
+    font-family: 'Eczar', sans-serif, 'arial';
     font-weight: 600;
-    font-size: 72px;
-    color: black;
+    font-size: 62px;
+    color: #35455d;
 }
 h4 {
-    font-family: 'Roboto', sans-serif, 'arial';
+    font-family: 'Eczar', sans-serif, 'arial';
     font-weight: 400;
-    font-size: 20px;
-    color: #9b9b9b;
+    font-size: 25px;
+    color: #92b1b6;
     line-height: 1.5;
 }
 .contactContainer{
-    border: 1px solid red;
+    background-image: url("img/contact_us.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,6 +95,7 @@ h4 {
     position: relative;
 }
 form{
+    opacity: 0.6;
     width: 500px;
     max-width: 100%;
     display: grid;
@@ -91,6 +104,7 @@ form{
     position: relative;
 }
 textarea{
+    /* background-color: #F1C5AE; */
     border-radius: 4px;
     min-height: 30px;
 }
@@ -101,15 +115,22 @@ textarea{
 	margin-bottom: 10px;
 	grid-column: span 2;
 }
+
 .button{
     padding: 7px 35px;
     border-radius: 60px;
-    background-color: #4b8cfb;
-    color: white;
+    background-color: #35455d;
+    color: #ecddd0;
     font-size: 18px;
     justify-self: end;
     cursor: pointer;
     grid-column: span 2;
+}
+@media screen and (max-width: 768px) {
+    #maincontainer{
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* @media only screen and (min-width: 768px) {
     .resize-button{
@@ -125,7 +146,8 @@ textarea{
         width: 100%;
     }
 } */
-.contactcontainer{
+/* .contactcontainer{
+    background-image: url("img/contact_us.jpg");
     width: 90%;
     display: grid;
     margin: 10px auto;
@@ -133,7 +155,7 @@ textarea{
     padding: 20px;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-}
+} */
 footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -156,6 +178,7 @@ footer {
 .followus{
     grid-column: 9;
 }
+
 @media only screen and (min-width: 768px) {
 	.resize-button{
 		position: relative;
@@ -163,12 +186,12 @@ footer {
 		justify-self: end;
 	}
 	#tel {
-		grid-column: 1;
+		grid-column: 2;
 		grid-row: 2;
 		display: inline-grid;
 	}
 	#email {
-		grid-column: 2;
+		grid-column: 1;
 		grid-row: 2;
 		display: inline-grid;
 	}
@@ -209,12 +232,117 @@ footer {
 }
 
 .hlink:hover {
-	color: red;
+	color: #35455d;
 	text-decoration: none;
 }
 
 .social-media {
+    color: #35455d;
+    font-family: Eczar;
 	grid-column: 9;
 	position: relative;
 	display: grid;
+}
+@media screen and (min-width: 1200px) {
+    .head-logo {
+        grid-column: 3;  
+    }
+    .home {
+        grid-column: 5;
+    }
+    .records {
+        grid-column: 6;
+    }
+    .about-us {
+        grid-column: 7;
+    }
+    /* .contact {
+        grid-column: 7;
+    } */
+    .search {
+         grid-column: 11;
+    }
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .header-pic {
+        display: none;
+    }
+    .head-container {
+        min-height: 170px;
+    }
+    header {
+        height: 140px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 15px;
+    }
+    .head-logo {
+        grid-column: 7;
+        grid-row: 1;
+    }
+    .home { 
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .records {
+        grid-column: 6;
+        grid-row: 2;
+    }
+    .about-us {
+        grid-column: 7;
+        grid-row: 2;
+    }
+   /*  .contact {
+        grid-column: 7;
+        grid-row: 2;
+    } */
+    .search {
+         grid-column: 11;
+         grid-row: 2; 
+    }
+}
+@media screen and (max-width: 471px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: auto;
+        height: 185px;
+    }
+    .head-container {
+        height: 185px;
+    }
+    .search {
+        width: 300px;
+    }
+    .search-cart {
+        justify-self: center;
+    }
+
+    footer {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .social-media {
+        grid-row: 2;
+        grid-column: 5;
+    }
+
+    .telcontact {
+        grid-row: 2;
+        grid-column: 6;
+        align-self: start;
+    }
+}
+.followus{
+    font-size: larger;
+    /* color: #35455d; */
+    /* color: #f1c5ae; */
+    color: #ecddd0;
+    /* color: #ced2c2; */
+    /* color: #bfd1df; */
+    justify-self: center;
 }
