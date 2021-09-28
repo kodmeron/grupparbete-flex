@@ -47,36 +47,26 @@ header {
     color: black;
 }
 
+.search {
+    width: 140px;
+    height: 27px;
+    background-color: #ECDDD0;;
+    font-family: Eczar;
+    font-size: large;
+    text-align: center;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    float: left;
+    color: black;
+    flex-grow: inherit;
+}
+
 a:hover {
     background-color: #ECDDD0;
 }
 
-.head-logo {
-    grid-column: 3;
-}
 
-.home {
-    grid-column: 5;
-}
-
-.records {
-    grid-column: 6;
-}
-
-.about-us {
-    grid-column: 7;
-}
-
-.contact {
-    grid-column: 8;
-}
-
-/* .search {
-    
-     grid-column: 11;
-        
-   
-} */
 
 footer {
     display: grid;
@@ -154,12 +144,12 @@ footer {
     .contact {
         grid-column: 8;
     }
-    /* .search {
+     .search {
         
          grid-column: 11;
             
        
-    } */
+    } 
 }
 
 @media screen and (max-width: 768px) {
@@ -210,8 +200,15 @@ footer {
        flex-direction: column;
        box-sizing: border-box;
        width: auto;
+       height: 160px;
+   }
+   .head-container{
+       height: 160px;
    }
   
+ .search {
+     width: 300px;
+ }
+
 
 }
-
