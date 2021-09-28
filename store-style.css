@@ -139,10 +139,6 @@ footer {
 }
 .followus{
     grid-column: 9;
-
-
-@media screen and (min-width: 1200px) {
-    
 }
 
 @media screen and (max-width: 1200px) {
@@ -224,5 +220,4 @@ footer {
     "box-item24"
     ;
     }
-}
 }
