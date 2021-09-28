@@ -23,7 +23,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
 }
 
 .menu-items {
@@ -47,10 +46,15 @@ header {
     color: black;
 }
 
-.search {
+.search-cart {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.search, .subscribe {
     width: 140px;
     height: 27px;
-    background-color: #ECDDD0;;
+    background-color: #ECDDD0;
     font-family: Eczar;
     font-size: large;
     text-align: center;
@@ -62,11 +66,13 @@ header {
     flex-grow: inherit;
 }
 
+.cart {
+    margin-top: 8px;
+}
+
 a:hover {
     background-color: #ECDDD0;
 }
-
-
 
 footer {
     display: grid;
@@ -98,69 +104,48 @@ header, footer {
 
 .followus {
     grid-column: 9;
-   }
+}
 
-   .footer-logo {
+.footer-logo {
     grid-column: 3;
-    }
-    .telcontact {
-        grid-column: 12;
-    }
-    .subscribe{
-        grid-column: 5;
-    }
-   
-   .followus{
+}
+
+.telcontact {
+    grid-column: 12;
+}
+
+.subscribe {
+    grid-column: 5;
+}
+
+.followus {
     grid-column: span 2;
     grid-row: 1;
 }
+
 .social-media-logo {
-	width: 2vw;
+    width: 2vw;
 }
 
 .hlink {
-	color: black;
+    color: black;
 }
 
 .hlink:hover {
-	color: red;
-	text-decoration: none;
+    color: red;
+    text-decoration: none;
 }
 
 .social-media {
-	grid-column: 9;
-	position: relative;
-	display: grid;
+    grid-column: 9;
+    position: relative;
+    display: grid;
 }
 
-@media screen and (min-width: 1200px) {
-    .head-logo {
-        grid-column: 3;
-    }
-    .home {
-        grid-column: 5;
-    }
-    .records {
-        grid-column: 6;
-    }
-    .about-us {
-        grid-column: 7;
-    }
-    .contact {
-        grid-column: 8;
-    }
-     .search {
-        
-         grid-column: 11;
-            
-       
-    } 
-}
+
 
 @media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
+  
     .header-pic {
         display: none;
     }
@@ -169,51 +154,58 @@ header, footer {
     }
     header {
         height: 140px;
-        grid-template-columns: repeat(5, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        column-gap: 15px;
+        column-gap: 10px;
     }
-    .head-logo {
-        grid-column: 3;
-        grid-row: 1;
-    }
-    .home {
-        grid-column: 1;
+
+   .search-cart {
+       grid-row: 2;
+       grid-column: 2;
+   }
+ 
+   .search {
+       width: auto;
+   }
+
+    .telcontact {
         grid-row: 2;
-    }
-    .records {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    .about-us {
-        grid-column: 3;
-        grid-row: 2;
-    }
-    .contact {
-        grid-column: 4;
-        grid-row: 2;
-    }
-    .search {
-        grid-column: 5;
-        grid-row: 2;
+        grid-column: 6;
+        align-self: start;
     }
 }
 
 @media screen and (max-width: 471px) {
-   header {
-       display: flex;
-       flex-direction: column;
-       box-sizing: border-box;
-       width: auto;
-       height: 160px;
-   }
-   .head-container{
-       height: 160px;
-   }
-  
- .search {
-     width: 300px;
- }
+    header {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: auto;
+        height: 185px;
+    }
+    .head-container {
+        height: 185px;
+    }
+    .search {
+        width: 300px;
+    }
+    .search-cart {
+        justify-self: center;
+    }
 
+    footer {
+        grid-template-rows: repeat(2, 1fr);
+    }
 
+    .social-media {
+        grid-row: 2;
+        grid-column: 5;
+    }
+
+    .telcontact {
+        grid-row: 2;
+        grid-column: 6;
+        align-self: start;
+    }
 }
