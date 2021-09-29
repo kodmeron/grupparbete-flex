@@ -152,6 +152,28 @@
     grid-column: 1;
     }
 
+    * {
+        box-sizing: border-box;
+      }
+      
+      
+      .photos-section {
+        
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
     
 
     /* MEDIA SMALL LAPTOP RESPONSIVE  */
@@ -247,6 +269,11 @@
             grid-column: 1;
             grid-row: 2;
         }
+
+        .column {
+            flex: 50%;
+            max-width: 50%;
+          }
     }
 
     /* MEDIA MOBILE RESPONSIVE */
@@ -318,5 +345,10 @@
             grid-column: 1;
             grid-row: 2;
         }
+
+        .column {
+            flex: 100%;
+            max-width: 100%;
+          }
     }
 
