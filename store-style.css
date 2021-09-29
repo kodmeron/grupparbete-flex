@@ -64,6 +64,9 @@ text-decoration: none;
     padding: 6px 8px 6px 0px;
     
 }
+.rock, .electronic, .rock, .alternative, .punk {
+    width: 100%;
+}
 
 .container-store img {
     width:100%;
@@ -210,6 +213,9 @@ footer {
         }
         footer {
             position: bottom;                     
+        }
+        .sidenav-store {
+        min-height: 2400px;
         }
         .sidenav {
             grid-column:1;
