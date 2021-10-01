@@ -10,16 +10,21 @@ body {
     background-color: #ECDDD0;
     margin: auto;
 }
-
+#dropdown-btn {
+    display: none;
+}
+.head-container,
+.menu-items,
+a,
+footer,
+form {
+    display: grid;
+}
 .header-pic {
     height: 170px;
     width: 100%; 
 }
-.head-container {
-    display: grid;
-}
 .menu-items {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
 }
@@ -34,16 +39,6 @@ header {
     align-items: center;
     gap: 10px;
 }
-/* header {
-    
-    height: 80px;
-    width: auto;
-    background-color: #92B1B6;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    justify-items: center;
-    align-items: center;
-}*/
 .home, 
 .records, 
 .about-us, 
@@ -60,7 +55,6 @@ a {
     margin: 0;
     padding: 0;
     float: left;
-    display: grid;
     column-gap: 17%;
     text-decoration: none;
     color: black; 
@@ -114,7 +108,6 @@ form{
     opacity: 0.6;
     width: 500px;
     max-width: 100%;
-    display: grid;
     gap: 10px;
     padding: 20px;
     position: relative;
@@ -141,7 +134,6 @@ textarea{
     grid-column: span 2;
 }
 footer {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
     justify-items: center;
@@ -157,7 +149,11 @@ footer {
     grid-column: 5;
 }
 .social-media-logo {
-	width: 2vw;
+	width: 3vw;
+}
+.social-media a:hover{
+    transform: scale(1.5);
+    background-color: #ced2c2 ;
 }
 .hlink {
 	color: black;
@@ -171,7 +167,16 @@ footer {
     font-family: Eczar;
 	grid-column: 9;
 	position: relative;
-	display: grid;
+	display: flex;
+    flex-direction: row;
+}
+.social-media a {
+    align-self: center;
+    grid-column: 2;
+}
+.social-media img{
+    padding: 1vh;
+    grid-column: 1;
 }
 .followus{
     grid-column: span 2;
@@ -225,7 +230,7 @@ footer {
          grid-column: 11;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .resize-button{
 		position: relative;
 		margin: 10px 0 0 0;
@@ -286,18 +291,46 @@ footer {
     h1{
         display: none;
     }
+    #dropdown-btn {
+        position: relative;
+        display: inline-block;
+    }
+    #dropdown-content {
+        display: flex;
+        flex-direction: row;
+        display: none;
+        list-style: none;
+        position: absolute;
+        top:10px;
+        background-color: #ECDDD0;
+        width: fit-content;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        opacity: 0.8;
+    }
+    #dropdown-content a:hover{
+        background-color: #ecddd0;
+    }
+    #dropdown-btn:hover #dropdown-content {
+        display: block;
+    }
+    #maincontainer img,
+    .search,
+    .search-cart{
+        display: none;
+    }
+    .menu-items{
+        display: none;
+    }
     header {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         width: auto;
-        height: 185px;
     }
     .head-container {
         height: 185px;
-    }
-    .search {
-        width: 300px;
     }
     footer {
         grid-template-rows: repeat(2, 1fr);
