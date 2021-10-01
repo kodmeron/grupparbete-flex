@@ -211,6 +211,9 @@ footer {
         gap: 5%;
         min-height: 2400px;
         }
+        header {
+            width: 100%;
+        }
         footer {
             position: bottom;                     
         }
@@ -335,6 +338,7 @@ footer {
     }
     header {
         position: fixed;
+        width: 100%;
     }
     #footer {
         display: none;
