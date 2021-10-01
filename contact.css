@@ -42,7 +42,8 @@ header {
 .home, 
 .records, 
 .about-us, 
-.contact {
+.contact,
+#dropdown-btn a {
     width: 80px;
     height: 30px;
     background-color: #F1C5AE;
